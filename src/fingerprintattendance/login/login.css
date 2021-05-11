@@ -1,0 +1,36 @@
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #3333ff;
+    -fx-primarytext : #848484;
+    -fx-white : #f0f0f0;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1:#1976D2;
+    -fx-font: Microsoft Phags;
+}
+
+.root{
+    -fx-background-color: -fx-primary;
+}
+
+.button{
+    -fx-background-color: transparent;
+}
+
+.login_button{
+    -fx-background-color: -fx-blue;
+    -fx-text-fill: -fx-white;
+    -fx-border-radius: 0px;
+}
+
+.placeholder{
+    -fx-text-fill: -fx-primarytext;
+    -fx-prompt-text-fill: -fx-primarytext;
+}
+
+.wrong-credentials
+{
+    -jfx-unfocus-color: #ef5350;
+    -jfx-focus-color: #ef5350;
+}
+

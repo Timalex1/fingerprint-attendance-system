@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" styleClass="root" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fingerprintattendance.login.LoginController">
+    <stylesheets>
+        <URL value="@/fingerprintattendance/login/login.css" />
+    </stylesheets>
+   <children>
+      <VBox alignment="CENTER" layoutX="905.0" layoutY="-3.0" prefHeight="48.0" prefWidth="33.0">
+         <children>
+            <JFXButton fx:id="close" onAction="#close_stage" prefHeight="60.0" prefWidth="64.0" text="X">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding></VBox>
+      <HBox alignment="CENTER" layoutY="34.0" prefHeight="137.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="34.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="160.0" prefWidth="129.0">
+               <children>
+                  <ImageView fitHeight="81.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/fingerprint%20icon_4476236.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="35.0" prefWidth="109.0">
+                     <children>
+                        <Text fill="#1976d2" strokeType="OUTSIDE" strokeWidth="0.0" text="Atten" wrappingWidth="66.13671875">
+                           <font>
+                              <Font name="Microsoft PhagsPa" size="27.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#848484" strokeType="OUTSIDE" strokeWidth="0.0" text="Dee" wrappingWidth="48.13665771484375">
+                           <font>
+                              <Font name="Microsoft PhagsPa" size="27.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox alignment="BOTTOM_CENTER" fillWidth="false" layoutY="97.0" prefHeight="357.0" prefWidth="947.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="129.0">
+         <children>
+            <VBox prefHeight="230.0" prefWidth="288.0" spacing="30.0">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/person.png" />
+                           </image>
+                        </ImageView>
+                        <JFXTextField fx:id="email_id" onKeyPressed="#email_click" prefHeight="42.0" prefWidth="250.0" promptText="Email (ex@fuoye.edu.ng)" styleClass="placeholder" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_CENTER" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@resources/locked.png" />
+                           </image>
+                        </ImageView>
+                        <JFXPasswordField fx:id="password_id" onKeyPressed="#password_click" prefHeight="44.0" prefWidth="256.0" promptText="Password" styleClass="placeholder" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" spacing="20.0">
+                     <children>
+                        <JFXSpinner fx:id="login_spin" prefHeight="21.0" prefWidth="38.0" />
+                        <JFXButton fx:id="login_id" defaultButton="true" onAction="#login" prefHeight="34.0" prefWidth="102.0" styleClass="login_button" text="Login">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@resources/log-in.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="40.0" />
+         </padding>
+      </VBox>
+   </children>
+                
+</AnchorPane>

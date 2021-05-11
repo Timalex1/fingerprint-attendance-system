@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FingerprintAttendance.jnlp">
+  <information>
+    <title>FingerprintAttendance</title>
+    <vendor>hp</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FingerprintAttendance.jar" size="1950932" download="eager" />
+    <jar href="lib\bcrypt-0.4.1.jar" size="42979" download="eager" />
+    <jar href="lib\bytes-0.4.6.jar" size="65802" download="eager" />
+    <jar href="lib\dpuareu.jar" size="70691" download="eager" />
+    <jar href="lib\jfoenix-8.0.4.jar" size="2487326" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\xmlParserAPIs.jar" size="124724" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="FingerprintAttendance" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="fingerprintattendance.FingerprintAttendance"  name="FingerprintAttendance" />
+  <update check="always"/>
+</jnlp>

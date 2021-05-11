@@ -1,0 +1,35 @@
+*{
+    -fx-primary : #2A2E37;
+    -fx-secondary : #3333ff;
+    -fx-primarytext : #848484;
+    -fx-white : #f0f0f0;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1:#1976D2;
+    -fx-font: Microsoft Phags;
+}
+
+.sidebar{
+    -fx-background-color: -fx-primary;
+    -fx-padding: 30px 0px 0px 0px;
+}
+
+.dash-blue{
+    -fx-background-color: -fx-blue;
+}
+
+.menu_btn:hover, .menu_btn:focused{
+    -fx-background-color: -fx-blue;
+    -fx-border-width: 0px 0px 0px 2px;
+    -fx-border-color: -fx-white;
+}
+
+.submit-button{
+    -fx-background-color: -fx-blue;
+}
+
+.pane{
+    -fx-background-color: #f9f9f9;
+    -fx-padding: 50px;
+}
+

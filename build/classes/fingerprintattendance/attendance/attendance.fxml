@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="726.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fingerprintattendance.attendance.AttendanceController">
+    <stylesheets>
+        <URL value="@/fingerprintattendance/admin/admin.css" />
+    </stylesheets>
+    <children>
+        <HBox layoutX="-1.0" layoutY="33.0" prefHeight="486.0" prefWidth="712.0" spacing="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="486.0" prefWidth="347.0" spacing="20.0" styleClass="vbox" HBox.hgrow="SOMETIMES">
+                    <HBox.margin>
+                        <Insets left="15.0" />
+                    </HBox.margin>
+                    <children>
+                  <HBox fillHeight="false">
+                     <children>
+                              <JFXButton fx:id="scan_finger_id" defaultButton="true" onAction="#scan_finger" prefHeight="44.0" prefWidth="330.0" ripplerFill="#440099" style="-fx-background-color: #4a0808; -fx-text-fill: #fff;" text="Scan Finger" textFill="WHITE">
+                                  <font>
+                                      <Font name="System Bold" size="12.0" />
+                                  </font>
+                              </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                        <JFXTextField fx:id="student_name_id" disable="true" editable="false" prefHeight="42.0" prefWidth="324.0" promptText="Student Name" />
+                        <JFXTextField fx:id="student_mat_id" disable="true" editable="false" prefHeight="36.0" prefWidth="327.0" promptText="Student Matric No." />
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="284.0" prefWidth="324.0" spacing="20.0">
+                            <padding>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                            </padding>
+                            <children>
+                                <VBox prefHeight="228.0" prefWidth="209.0" style="-fx-border-radius: 5px; -fx-border-width: 1px; -fx-border-color: #c3c3c3;" VBox.vgrow="NEVER">
+                                    <children>
+                                        <ImageView fx:id="fingerprint_id" fitHeight="198.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                    <effect>
+                                        <Glow level="0.32" />
+                                    </effect>
+                                </VBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+                <VBox fillWidth="false" prefHeight="486.0" prefWidth="315.0" spacing="20.0" styleClass="vbox">
+                    <children>
+                        <VBox>
+                            <children>
+                                <Label prefHeight="34.0" prefWidth="131.0" text="Course" />
+                                <JFXComboBox fx:id="class_list" prefHeight="25.0" prefWidth="319.0" />
+                            </children>
+                        </VBox>
+                        <VBox>
+                            <children>
+                                <Label prefHeight="34.0" prefWidth="131.0" text="Date" />
+                                <JFXDatePicker fx:id="date_id" prefHeight="28.0" prefWidth="275.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+      <VBox prefHeight="34.0" prefWidth="86.0">
+         <children>
+            <JFXButton onAction="#back_to_prev" prefHeight="43.0" prefWidth="84.0" style="-fx-text-fill: #0f0f0f;" text="Back" />
+         </children>
+      </VBox>
+      <JFXSpinner fx:id="spinner_id" layoutX="304.0" prefHeight="34.0" prefWidth="22.0" />
+    </children>
+</AnchorPane>
